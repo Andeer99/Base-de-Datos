@@ -7,7 +7,65 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Gestión de Alumnos</h1>
+
+        <div class="form-section">
+            <h2>Alta de Alumnos</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad">
+            </div>
+            <button id="btnAltaAlumno">Dar de Alta</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Inscribir Alumno a Clase</h2>
+            <div class="form-group">
+                <label for="alumnoClase">Alumno:</label>
+                <input type="text" id="alumnoClase">
+            </div>
+            <div class="form-group">
+                <label for="clase">Clase:</label>
+                <input type="text" id="clase">
+            </div>
+            <button id="btnInscribirClase">Inscribir</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Asignar Calificaciones</h2>
+            <div class="form-group">
+                <label for="alumnoCalificacion">Alumno:</label>
+                <input type="text" id="alumnoCalificacion">
+            </div>
+            <div class="form-group">
+                <label for="calificacion">Calificación:</label>
+                <input type="number" id="calificacion">
+            </div>
+            <button id="btnAsignarCalificacion">Asignar</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Crear Grupos y Asignar Alumnos</h2>
+            <div class="form-group">
+                <label for="grupo">Grupo:</label>
+                <input type="text" id="grupo">
+            </div>
+            <div class="form-group">
+                <label for="alumnosGrupo">Alumnos (separados por comas):</label>
+                <input type="text" id="alumnosGrupo">
+            </div>
+            <button id="btnCrearGrupo">Crear Grupo</button>
+        </div>
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
